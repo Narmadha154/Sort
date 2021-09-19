@@ -1,5 +1,6 @@
 package com.company.sort;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Runner {
@@ -25,6 +26,10 @@ public class Runner {
                     MergeSort merge = new MergeSort();
                     merge.doMergeSort();
                     break;
+                case 5:
+                    QuickSort quick = new QuickSort();
+                    quick.doQuickSort();
+                    break;
                 case 8:
                     KthSmallest small= new KthSmallest();
                     small.findKthSmallestElement();
@@ -38,6 +43,19 @@ public class Runner {
                     EqualityOfArray check= new EqualityOfArray();
                     boolean value=check.checkEquality();
                     System.out.println(value);
+                    break;
+                case 15:
+                    MaximizeToys maxi= new MaximizeToys();
+                    maxi.toyCount();
+                    break;
+                case 16:
+                    Bitonic bio= new Bitonic();
+                    bio.doBitonic();
+                    break;
+                case 17:
+                    Candy shop= new Candy();
+                    ArrayList<Integer> list=shop.candyStore();
+                    System.out.println(list);
                     break;
                 default:
                     System.out.println("no program");
