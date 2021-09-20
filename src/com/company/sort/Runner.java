@@ -44,6 +44,10 @@ public class Runner {
                     boolean value=check.checkEquality();
                     System.out.println(value);
                     break;
+                case 14:
+                    Closest close= new Closest();
+                    close.findClosest();
+                    break;
                 case 15:
                     MaximizeToys maxi= new MaximizeToys();
                     maxi.toyCount();
